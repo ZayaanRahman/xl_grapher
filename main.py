@@ -5,7 +5,7 @@ import processing as proc
 
 
 def main():
-    
+
     # separate arg vals with space to make filename
     # file_name = " ".join(sys.argv[1:])
     file_name = "Test File.xlsx"  # TEMPORARY
@@ -17,13 +17,13 @@ def main():
         args = parse_args(input("xl_grapher: "))
 
         # terminate loop
-        if args[0] == "end" or args[0] == "break" or args[0] == "done":
+        if args[0] == "end":
             print("breaking...")
             break
 
         # provide commands
         if args[0] == "help":
-            print("heelp")
+            help()
 
         # print current data
         elif args[0] == "data":
@@ -41,7 +41,6 @@ def main():
                 plt.show()
             else:
                 print("invalid argument.")
-
 
         # make a histogram
         elif args[0] == "histo":
@@ -64,7 +63,8 @@ def main():
         # print the standard error of the mean, or standard deviation of the mean
         elif args[0] == "sem":
             if len(args) == 2:
-                print(np.std(data[args[1]], ddof=1)/np.sqrt(len(data[args[1]])))
+                print(np.std(data[args[1]], ddof=1) /
+                      np.sqrt(len(data[args[1]])))
             else:
                 print("invalid argument.")
 
@@ -89,9 +89,27 @@ def parse_args(user_input):
     args = args + [arg.strip() for arg in user_input[len(args[0]):].split(',')]
     return args
 
+# print help info
+def help():
+    print("\nCommands are issued in the form of 'function_name arg1, arg2, arg3'.")
+    print("Args must be separated by commas, if needed.\n")
 
-
-
+    print("general")
+    print("help: list possible functions")
+    print("end: end program")
+    print("data: print current data\n")
+    
+    print("graphing")
+    print("graph: make a scatter plot of arg1 vs arg2")
+    print("histo: make a histogram of arg1\n") # FIX
+    
+    print("statistics")
+    print("mean: print the mean of arg1")
+    print("std: print the standard deviation of arg1")
+    print("sem: print the standard error of the mean of arg1")
+    print("median: print the median of arg1")
+    print("mode: print the mode of arg1\n")
+    
 
 
 if __name__ == "__main__":
