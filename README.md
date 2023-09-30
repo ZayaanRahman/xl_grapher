@@ -1,6 +1,6 @@
 # xl_grapher
 
-**xl_grapher** is a command line tool for quickly analyzing and graphing data from Excel files, using the **numpy**, **pandas** and **matplotlib** libraries.
+**xl_grapher** is a command line tool for quickly analyzing and graphing data from Excel files, using the **numpy**, **pandas**, and **matplotlib** libraries.
 
 ## Installation
 
@@ -47,11 +47,16 @@ python xl_grapher.py
 
 The script provides various commands for analysis and graphing, to be entered after the script is run:
 
+**general**  
 help: List available functions and commands.  
 end: Exit the program.  
 data: Display the current data from the Excel file.  
+
+**graphing**  
 graph: Create a scatter plot of two columns from the Excel file.  
-histo: Create a histogram of a column from the Excel file (functionality not yet implemented).  
+histo: Create a histogram of a column from the Excel file (functionality not yet implemented). 
+
+**statistics**  
 mean: Calculate and display the mean of a specified column.  
 std: Calculate and display the population standard deviation of a specified column.  
 sem: Calculate and display the standard error of the mean (SEM) of a specified column.  

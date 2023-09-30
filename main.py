@@ -1,14 +1,14 @@
 import numpy as np
 import matplotlib.pyplot as plt
-
+import sys
 import processing as proc
 
 
 def main():
 
     # separate arg vals with space to make filename
-    # file_name = " ".join(sys.argv[1:])
-    file_name = "Test File.xlsx"  # TEMPORARY
+    file_name = " ".join(sys.argv[1:])
+    # file_name = "Test File.xlsx"  # TEMPORARY
 
     data = proc.get_data(file_name)
 
