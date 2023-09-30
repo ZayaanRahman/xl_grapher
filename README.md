@@ -47,18 +47,18 @@ python xl_grapher.py
 
 The script provides various commands for analysis and graphing, to be entered after the script is run:
 
-help: List available functions and commands.
-end: Exit the program.
-data: Display the current data from the Excel file.
-graph: Create a scatter plot of two columns from the Excel file.
-histo: Create a histogram of a column from the Excel file (functionality not yet implemented).
-mean: Calculate and display the mean of a specified column.
-std: Calculate and display the population standard deviation of a specified column.
-sem: Calculate and display the standard error of the mean (SEM) of a specified column.
-median: Calculate and display the median of a specified column.
-mode: Display the mode of a specified column (functionality not yet implemented).
+help: List available functions and commands.  
+end: Exit the program.  
+data: Display the current data from the Excel file.  
+graph: Create a scatter plot of two columns from the Excel file.  
+histo: Create a histogram of a column from the Excel file (functionality not yet implemented).  
+mean: Calculate and display the mean of a specified column.  
+std: Calculate and display the population standard deviation of a specified column.  
+sem: Calculate and display the standard error of the mean (SEM) of a specified column.  
+median: Calculate and display the median of a specified column.  
+mode: Display the mode of a specified column (functionality not yet implemented).  
 
-For example, to create a scatter plot using columns 'a' and 'b', enter `graph 'a', 'a'`.
+For example, to create a scatter plot using columns 'a' and 'b', enter `graph 'a', 'a'`.  
 
 ## Contributions
 
