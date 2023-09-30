@@ -63,7 +63,7 @@ sem: Calculate and display the standard error of the mean (SEM) of a specified c
 median: Calculate and display the median of a specified column.  
 mode: Display the mode of a specified column (functionality not yet implemented).  
 
-For example, to create a scatter plot using columns 'a' and 'b', enter `graph 'a', 'a'`.  
+For example, to create a scatter plot using columns 'a' and 'b', enter `graph 'a', 'b'`.  
 
 ## Contributions
 
