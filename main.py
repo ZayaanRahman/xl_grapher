@@ -18,7 +18,7 @@ def main():
 
         # terminate loop
         if args[0] == "end":
-            print("breaking...")
+            print("ending...")
             break
 
         # provide commands
@@ -95,21 +95,23 @@ def help():
     print("Args must be separated by commas, if needed.\n")
 
     print("general")
+    print("------------")
     print("help: list possible functions")
     print("end: end program")
     print("data: print current data\n")
-    
+
     print("graphing")
+    print("------------")
     print("graph: make a scatter plot of arg1 vs arg2")
-    print("histo: make a histogram of arg1\n") # FIX
-    
+    print("histo: make a histogram of arg1\n")  # FIX
+
     print("statistics")
+    print("------------")
     print("mean: print the mean of arg1")
     print("std: print the standard deviation of arg1")
     print("sem: print the standard error of the mean of arg1")
     print("median: print the median of arg1")
     print("mode: print the mode of arg1\n")
-    
 
 
 if __name__ == "__main__":
