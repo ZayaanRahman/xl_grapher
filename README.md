@@ -1,6 +1,6 @@
 # xl_grapher
 
-**xl_grapher** is a command line tool for quickly analyzing and graphing data from Excel files, using the **numpy** and **matplotlib** libraries.
+**xl_grapher** is a command line tool for quickly analyzing and graphing data from Excel files, using the **numpy**, **pandas** and **matplotlib** libraries.
 
 ## Installation
 
