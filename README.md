@@ -40,7 +40,7 @@ pip install -r requirements.txt
 You can now run the script:
 
 ```bash
-python xl_grapher.py
+python main.py your-file-name.xlsx
 ```
 
 ## Usage
